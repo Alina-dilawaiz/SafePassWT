@@ -25,78 +25,27 @@ export default function Checks() {
   }
 
   function checkIn() {
-    if (!cnic) {
-      alert("Enter CNIC");
-      return;
-    }
-
-    const visitor = regVisitors.find((v) => v.cnic === cnic);
-
-    if (!visitor) {
-      alert("Visitor not registered!");
-      return;
-    }
-
-    if (activeVisitors.includes(cnic)) {
-      alert("Already checked in");
-      return;
-    }
-
-    const newActive = [...activeVisitors, cnic];
-
-    const newLogEntry = {
-      name: visitor.name,
-      cnic,
-      checkIn: new Date().toLocaleString(),
-      checkOut: "-",
-      status: "in",
-    };
-
-    const newLogs = [...logs, newLogEntry];
-
-    setActiveVisitors(newActive);
-    setLogs(newLogs);
-    saveAll(regVisitors, newActive, newLogs);
-
-    setMessage(`${visitor.name} checked in successfully!`);
-  }
+  fetch("/api/checkin", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      name: "Visitor Name", // later from DB
+      cnic
+    })
+  })
+    .then(res => res.json())
+    .then(data => setMessage(data.message));
+} 
 
   function checkOut() {
-    if (!cnic) {
-      alert("Enter CNIC");
-      return;
-    }
-
-    if (!activeVisitors.includes(cnic)) {
-      alert("Visitor not checked in");
-      return;
-    }
-
-    const newActive = activeVisitors.filter((v) => v !== cnic);
-
-    // find the most recent 'in' log for this cnic (search from end)
-    const idx = (() => {
-      for (let i = logs.length - 1; i >= 0; i--) {
-        if (logs[i].cnic === cnic && logs[i].status === "in") return i;
-      }
-      return -1;
-    })();
-
-    const newLogs = [...logs];
-    if (idx !== -1) {
-      newLogs[idx] = {
-        ...newLogs[idx],
-        checkOut: new Date().toLocaleString(),
-        status: "out",
-      };
-    }
-
-    setActiveVisitors(newActive);
-    setLogs(newLogs);
-    saveAll(regVisitors, newActive, newLogs);
-
-    setMessage("Checked out successfully!");
-  }
+  fetch("/api/checkout", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ cnic })
+  })
+    .then(res => res.json())
+    .then(data => setMessage(data.message));
+} 
 
   return (
     <>
