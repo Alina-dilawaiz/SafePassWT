@@ -27,6 +27,13 @@ body {
     letter-spacing: 1px;
     color: #085c75;
     margin: 0;
+    
+}
+.navbar h1:hover {
+    cursor: pointer;
+    color: #37a5c6;
+
+    
 }
 
 .navbar nav a {
@@ -39,7 +46,7 @@ body {
 }
 
 .navbar nav a:hover {
-    color: #4a6cff;
+    color: #37a5c6;
 }
 
 /* ================= SECTIONS ================= */
@@ -52,21 +59,112 @@ body {
     align-items: center;
     border-bottom: 2px solid #9bdadc;
 }
-
-/* Home background */
-#home {
-    background-image: url("@assets/lp.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
 
-/* Shared gradient sections */
+body {
+  min-height: 100vh;
+}
+
+/* HERO SECTION */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  border-bottom: 2px solid #a2dcde;
+  background: linear-gradient(
+    135deg,
+    #bff5ec,
+    #d8e8f5,
+    #f6e0d8
+  );
+}
+
+/* LEFT CONTENT */
+.hero-content {
+  max-width: 550px;
+}
+
+.hero-content h1 {
+  font-size: 52px;
+  font-weight: 700;
+  color:  #083447;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* RIGHT IMAGE */
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 420px;
+  height: 420px;
+  background: #eee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle img {
+  width: 420px;
+    height: 100%;
+  object-fit: cover; /* ensures image fills the circle */
+  border-radius: 50%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .circle {
+    width: 320px;
+    height: 320px;
+    margin-top: 40px;
+  }
+
+  .circle img {
+    width: 420px;
+      height: 100%;
+  object-fit: cover; /* ensures image fills the circle */
+  border-radius: 50%;
+  }
+}
+
 #AboutUS,
 #SafePassWorks,
 #KeyFeatures,
 #ContactUs {
-    background: linear-gradient(to bottom, #a1dddf 0%, #bef3ef 100%);
+   background: linear-gradient(
+    135deg,
+    #bff5ec,
+    #d8e8f5,
+    #f6e0d8
+  );
 }
 
 /* Contact override */
@@ -81,18 +179,18 @@ body {
 
 .aboutUsPage {
     display: flex;
-    gap: 150px;
+    gap: 160px;
     align-items: center;
 }
 
 .left-image img {
-    max-width: 500px;
+    max-width: 350px;
     height: auto;
     border-radius: 12px;
 }
 
 .right-contentAboutUs {
-    width: 350px;
+    width: 500px;
 }
 
 /* ================= SECTION HEADINGS ================= */
