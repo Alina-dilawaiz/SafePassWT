@@ -1,0 +1,322 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+.navbar {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgb(242, 245, 244);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); 
+}
+
+.navbar h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #085c75;
+    margin: 0;
+    font-size: x-large;
+}
+
+.navbar nav a {
+    margin-left: 25px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #085c75;
+    font-weight: 500;
+    transition: 0.3s;
+    font-size: large;
+
+}
+
+.navbar nav a:hover {
+    color: #4a6cff;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+}
+
+
+.page-section {
+    min-height: 100vh;
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #9bdadc;
+}
+
+#home {
+    background-image: url("images/lp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+#AboutUS,#SafePassWorks,
+#KeyFeatures,
+#ContactUs {
+    background: linear-gradient(to bottom, #a1dddf 0%, #bef3ef 100%);
+}
+
+
+#ContactUs {
+    height: auto;
+    min-height: auto !important;
+    padding: 60px 90px;
+    display: block !important;
+    text-align: left;
+}
+
+/* ABOUT US SECTION */
+.aboutUsPage {
+    display: flex;
+    gap: 150px;
+    align-items: center;
+}
+
+.left-image img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+}
+
+.right-contentAboutUs {
+    width: 350px;
+}
+
+/* SECTION HEADINGS */
+.page-section h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #05197c;
+    margin-bottom: 40px;
+     text-align: left;      
+    
+}
+
+/* FEATURE CARDS */
+.f-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    justify-content: center;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.f-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    width: 280px;
+    transition: 0.3s;
+}
+
+.f-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.f-card p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.f-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* CONTACT SECTION */
+.contact-content {
+    max-width: 800px;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    text-align: left;
+    box-shadow: none;
+}
+
+.contact-content h3 {
+    font-size: 28px;
+    color: #2a4eff;
+    margin-bottom: 15px;
+}
+
+.contact-content p {
+    font-size: 19px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.contact-content a {
+    color: black;
+    text-decoration: none;
+}
+
+.contact-content a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* ADMIN */
+.admin {
+    display: none;
+    padding: 80px 50px;
+}
+
+.admin.active {
+    display: block;
+}
+
+/* DASHBOARD CARDS */
+.card-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    width: 260px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* CHECK IN/OUT */
+#check input {
+    padding: 12px;
+    width: 280px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.button {
+    padding: 12px 20px;
+    border: none;
+    background: #2a4eff;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #1f34c9;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #1f275a;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    margin-top: 0px;
+    font-size:larger;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .navbar nav a {
+        margin-left: 15px;
+    }
+
+    .f-card {
+        width: 90%;
+    }
+}
+
+                          /* -------------How SafePass Works----------------*/
+
+/* Title */
+.works-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #021855;
+    margin-bottom: 40px;
+}
+
+/* Container for cards */
+.works-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual card styling */
+.works-card {
+    background: white;
+    width: 260px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    border-top: 5px solid #0fbaee;
+}
+
+/* Hover effect */
+.works-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Step number circle */
+.step-number {
+    width: 45px;
+    height: 45px;
+    background-color: #0c84a8;
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px auto;
+}
+
+.works-card h3 {
+    color: #082192;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.works-card p {
+    font-size: 0.95em;
+    color: #082192;
+}
