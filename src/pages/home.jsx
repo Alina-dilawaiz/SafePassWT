@@ -1,6 +1,7 @@
 
 import qrPhone from "../assets/qr-phone.png";
 import AboutSvg from "../assets/About.svg";
+import { Link } from "react-router-dom";
 
 function Home() {
 
@@ -9,12 +10,12 @@ function Home() {
       <header className="navbar">
         <h1>SafePass</h1>
         <nav>
-          <a href="/home.jsx">Home</a>
-          <a href="/register">Register</a>
-          <a href="/checks.jsx">Check In/Out</a>
-          <a href="/logs">Logs</a>
-          
-        </nav>
+  <Link to="/">Home</Link>
+  <Link to="/register">Register</Link>
+  <Link to="/checks">Check In/Out</Link>
+  <Link to="/logs">Logs</Link>
+</nav>
+
       </header> 
 
        <section className="hero">

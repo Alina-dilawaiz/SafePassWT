@@ -1,19 +1,21 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Home from "./pages/home";
 import Checks from "./pages/checks";
-import "./App.css";
-import "./checks.css";
 import Logs from "./pages/logs";
-import "./logs.css";
+import "./App.css";
+
 
 function App() {
   return (
-        <>
-       <Home/>
-        <Checks/>
-        <Logs/>
-        </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/checks" element={<Checks />} />
+        <Route path="/logs" element={<Logs />} />
+      </Routes>
+    </Router>
   );
 }
 
-export default App; 
-
+export default App;

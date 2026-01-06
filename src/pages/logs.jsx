@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import "../logs.css";
 
 function Logs() {
   const [logs, setLogs] = useState([]);
@@ -11,18 +11,17 @@ function Logs() {
 
   return (
     <>
-      {/* Navbar */}
+      
       <header className="navbar">
         <h1>SafePass</h1>
         <nav>
           <a href="/">Home</a>
-          <a href="/check">Check In/Out</a>
-          <a href="/dashboard">Dashboard</a>
+          
           <a href="/logs">Logs</a>
         </nav>
       </header>
 
-      {/* Logs Section */}
+    
       <section id="logs" className="admin">
         <h2>Visitor Logs</h2>
 
@@ -59,7 +58,7 @@ function Logs() {
         </table>
       </section>
 
-      {/* Footer */}
+      
       <footer className="footer">
         <p>&copy; 2025 SafePass. All rights reserved.</p>
       </footer>

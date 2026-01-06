@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-
+import "../checks.css";
+import { Link } from "react-router-dom";
 
 
 export default function Checks() {
@@ -25,38 +26,37 @@ export default function Checks() {
   }
 
   function checkIn() {
-  fetch("/api/checkin", {
+  fetch("http://localhost:5000/api/checkin", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      name: "Visitor Name", // later from DB
+      name: "Visitor", // later from register page
       cnic
     })
   })
     .then(res => res.json())
     .then(data => setMessage(data.message));
-} 
-
+}
   function checkOut() {
-  fetch("/api/checkout", {
+  fetch("http://localhost:5000/api/checkout", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ cnic })
   })
     .then(res => res.json())
     .then(data => setMessage(data.message));
-} 
-
+}
   return (
     <>
       <header className="navbar">
         <h1>SafePass</h1>
-        <nav>
-          <a href="/home.jsx">Home</a>
-          <a href="/dashboard">Dashboard</a>
-          <a href="/checks.jsx">Check In/Out</a>
-          <a href="/logs">Logs</a>
-        </nav>
+       <nav>
+  <Link to="/">Home</Link>
+  <Link to="/checks">Check In/Out</Link>
+  <Link to="/dashboard">Dashboard</Link>
+  <Link to="/logs">Logs</Link>
+</nav>
+
       </header>
 
     <div id="check" className="admin">

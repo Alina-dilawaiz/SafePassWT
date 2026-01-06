@@ -1,16 +1,10 @@
 {
-<<<<<<< HEAD
   "name": "backend",
   "version": "1.0.0",
   "type": "module",
-  "scripts": {
-    "start": "node server.js"
-=======
-  "name": "package.json",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
+    "start": "node server.js",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -18,7 +12,8 @@
   },
   "dependencies": {
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.11.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
@@ -30,6 +25,5 @@
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
     "vite": "^7.2.4"
->>>>>>> cd20a6469644e4b777629a8e9e4f8a06283cb4d8
   }
 }
