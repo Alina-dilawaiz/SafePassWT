@@ -1,0 +1,61 @@
+.admin {
+  padding: 80px 20px;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the heading and the card container */
+  background: #f5f9fb;
+}
+
+.admin h2 {
+  font-size: 28px;
+  color: #085c75;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.card-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 40px 20px;
+  border-radius: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(74, 108, 255, 0.15);
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #6c757d;
+  margin-bottom: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card span {
+  font-size: 48px;
+  font-weight: 800;
+  color: #4a6cff; /* Matches your UI theme */
+  display: block;
+}
+
+/* Specific colors for different stats */
+.card:nth-child(1) span { color: #ff9f43; } /* Active - Orange */
+.card:nth-child(2) span { color: #4a6cff; } /* Total - Blue */
+.card:nth-child(3) span { color: #28c76f; } /* Completed - Green */

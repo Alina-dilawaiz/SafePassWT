@@ -12,6 +12,7 @@ function Home() {
         <nav>
           <Link to="/">Home</Link>
           <Link to="/register">Register</Link>
+          <Link to="/dashboard">Dashboard</Link>
           <Link to="/checks">Check In/Out</Link>
           <Link to="/logs">Logs</Link>
         </nav>
