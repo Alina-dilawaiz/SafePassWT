@@ -10,7 +10,7 @@ function Home() {
       <header className="navbar">
         <h1>SafePass</h1>
         <nav>
-          <Link to="/">Home</Link>
+         
           <Link to="/register">Register</Link>
           <Link to="/dashboard">Dashboard</Link>
           <Link to="/checks">Check In/Out</Link>
@@ -43,20 +43,19 @@ function Home() {
           </div>
 
           <div className="right-contentAboutUs">
-            <h1 style={{ color: "#021855", fontSize: "3.5em" }}>
+            <h1 style={{ color: "#021855", fontSize: "45px" }}>
               <b>The Future of Visitor Access.</b>
             </h1>
 
-            <p style={{ color: "#082192", fontSize: "1.2em" }}>
+            <p style={{ color: "#082192", fontSize: "20px" }}>
               SafePass is designed for modern, secure facilities.
-            </p>
-
-            <p style={{ color: "#082192", fontSize: "1.2em" }}>
               Our system replaces paper logs with encrypted, digital QR passes,
               ensuring rapid, pre-verified access and enhanced security for every visitor.
+            
             </p>
-
-            <h2 style={{ color: "#0e5a86", fontSize: "2em" }}>
+            <p>      </p>
+        
+            <h2 style={{  color: "#0e5a86", fontSize: "30px" }}>
               Register, Display and Go
             </h2>
           </div>
@@ -113,7 +112,7 @@ function Home() {
           </div>
 
           <div className="f-card">
-            <h3>Check-in/Check-out Logs</h3>
+            <h3>Check-in/Check-out</h3>
             <p>Maintain accurate records of all visitor movements for accountability and safety.</p>
           </div>
 

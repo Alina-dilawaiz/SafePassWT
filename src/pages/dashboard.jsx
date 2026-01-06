@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../dashboard.css";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const [stats, setStats] = useState({
@@ -16,6 +17,17 @@ const Dashboard = () => {
   }, []);
 
   return (
+    <>
+    <header className="navbar">
+        <h1>SafePass</h1>
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/dashboard">Dashboard</Link>
+          <Link to="/checks">Check In/Out</Link>
+          <Link to="/logs">Logs</Link>
+        </nav>
+
+      </header> 
     <section id="dashboard" class="admin">
       <h2 style={{ textAlign: "center" }}>Security Dashboard</h2>
       
@@ -36,6 +48,10 @@ const Dashboard = () => {
         </div>
       </div>
     </section>
+    <footer className="footer">
+        <p>© 2025 SafePass. All rights reserved.</p>
+      </footer>
+    </>
   );
 };
 

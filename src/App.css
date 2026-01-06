@@ -19,7 +19,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid #37a5c6;
 }
 
 .navbar h1 {
@@ -59,16 +59,6 @@ body {
     align-items: center;
     border-bottom: 2px solid #9bdadc;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
-}
-
-body {
-  min-height: 100vh;
-}
 
 /* HERO SECTION */
 .hero {
@@ -88,11 +78,11 @@ body {
 
 /* LEFT CONTENT */
 .hero-content {
-  max-width: 550px;
+  max-width: 450px;
 }
 
 .hero-content h1 {
-  font-size: 52px;
+  font-size: 92px;
   font-weight: 700;
   color:  #083447;
   margin-bottom: 20px;
@@ -103,42 +93,35 @@ body {
   font-size: 18px;
   color: #333;
   line-height: 1.6;
+  text-align: left;
 }
 
 /* RIGHT IMAGE */
 .hero-image {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: left;
 }
 
 .circle {
-  width: 420px;
-  height: 420px;
+  width: 460px;
+  height: 460px;
   background: #eee;
   border-radius: 50%;
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
 }
 
 .circle img {
-  width: 420px;
+  width: 440px;
     height: 100%;
   object-fit: cover; /* ensures image fills the circle */
   border-radius: 50%;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
-  }
-
   .hero-content h1 {
-    font-size: 40px;
+    font-size: 44px;
   }
 
   .circle {
@@ -153,7 +136,7 @@ body {
   object-fit: cover; /* ensures image fills the circle */
   border-radius: 50%;
   }
-}
+
 
 #AboutUS,
 #SafePassWorks,
@@ -179,19 +162,36 @@ body {
 
 .aboutUsPage {
     display: flex;
-    gap: 160px;
+    gap: 180px;
     align-items: center;
 }
 
 .left-image img {
-    max-width: 350px;
+    max-width: 400px;
     height: auto;
-    border-radius: 12px;
+    border-radius: 80px;
 }
 
 .right-contentAboutUs {
     width: 500px;
 }
+.aboutUsPage p{
+    font-size: 20px;
+    color: #082192;
+    text-align: left;
+}
+.aboutUsPage h1{
+    font-size: 40px;
+    color: #082192;
+    text-align: left;
+}
+.aboutUsPage h2{
+    font-size: 20px;
+    color: #0e5a86;
+    text-align: left;
+}
+
+
 
 /* ================= SECTION HEADINGS ================= */
 
@@ -231,14 +231,17 @@ body {
 }
 
 .f-card h3 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 8px;
+    color: black;
+    text-align: center;
 }
 
 .f-card p {
     font-size: 16px;
     line-height: 1.6;
+    color: black;
 }
 
 /* ================= HOW SAFEPASS WORKS ================= */
@@ -247,20 +250,21 @@ body {
     text-align: center;
     font-size: 2.5em;
     color: #021855;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
+    
 }
 
 .works-card-container {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    gap: 30px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 
 .works-card {
     background: white;
-    width: 260px;
+    width: 280px;
     padding: 25px;
     border-radius: 12px;
     text-align: center;
@@ -312,6 +316,7 @@ body {
     color: #333;
     line-height: 1.6;
     margin-bottom: 8px;
+    text-align: left;
 }
 
 .contact-content a {
@@ -328,7 +333,7 @@ body {
 .button {
     padding: 12px 20px;
     border: none;
-    background: #2a4eff;
+    background: #0c84a8;
     color: white;
     font-size: 15px;
     cursor: pointer;
@@ -337,17 +342,17 @@ body {
 }
 
 .button:hover {
-    background: #1f34c9;
+    background: #0f5f77;
 }
 
 /* ================= FOOTER ================= */
 
 .footer {
     background-color: #1f275a;
-    color: white;
     text-align: center;
     padding: 20px 15px;
     font-size: larger;
+    color: white;
 }
 
 /* ================= RESPONSIVE ================= */

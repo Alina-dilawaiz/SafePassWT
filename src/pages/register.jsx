@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { QRCodeSVG } from 'qrcode.react';
 import "../register.css";
 import regImage from "../assets/registerPage.png";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const [form, setForm] = useState({
@@ -40,6 +41,12 @@ const Register = () => {
 
   return (
     <>
+    <header className="navbar">
+        <h1>SafePass</h1>
+        <nav>
+          <Link to="/">Back</Link>
+        </nav>
+      </header>
       <section className="page-section">
         <div className="form-image-container">
           <div className="left-image">

@@ -50,7 +50,6 @@ export default function Checks() {
         <h1>SafePass</h1>
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/register">Register</Link>
           <Link to="/checks">Check In/Out</Link>
           <Link to="/dashboard">Dashboard</Link>
           <Link to="/logs">Logs</Link>

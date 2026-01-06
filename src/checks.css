@@ -90,7 +90,7 @@ body {
 .button {
   padding: 12px 20px;
   border: none;
-  background: #2a4eff;
+  background: #085c75;
   color: white;
   font-size: 15px;
   cursor: pointer;
@@ -99,12 +99,12 @@ body {
 }
 
 .button:hover {
-  background: #1f34c9;
+  background: #085c75;
 }
 
 #log {
   font-size: 16px;
-  color: #2a4eff;
+  color: #085c75;
   margin-top: 10px;
 }
 
