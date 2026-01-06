@@ -1,0 +1,124 @@
+/* Container for the whole page */
+.page-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #bff5ec, #d8e8f5, #f6e0d8);
+  padding: 40px 20px;
+}
+
+/* The card holding the image and the form */
+.form-image-container {
+  display: flex;
+  background: #ffffff;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures image corners match card radius */
+}
+
+/* Left side image styling */
+.left-image {
+  flex: 1;
+  background-color: #f8fbff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.left-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Right side form container */
+.right-form {
+  flex: 1;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-form h2 {
+  color: #021855;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+/* The actual Form layout */
+.right-form form {
+  display: flex;
+  flex-direction: column; /* This forces elements to stack vertically */
+  gap: 15px;
+}
+
+.right-form label {
+  font-weight: 600;
+  color: #444;
+  margin-bottom: -10px; /* Pulls label closer to its input */
+  font-size: 14px;
+}
+
+.right-form input {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.right-form input:focus {
+  border-color: #0e5a86;
+}
+
+/* Submit Button */
+.right-form button {
+  background-color: #0e5a86;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.right-form button:hover {
+  background-color: #021855;
+}
+
+/* QR Code and Message Styling */
+p {
+  margin-top: 15px;
+  color: #28a745; /* Green for success */
+  font-weight: 500;
+  text-align: center;
+}
+
+svg {
+  margin: 20px auto 0;
+  display: block; /* Centers the QR SVG */
+  padding: 10px;
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .form-image-container {
+    flex-direction: column;
+  }
+  
+  .left-image {
+    display: none; /* Hide image on mobile for more space */
+  }
+}

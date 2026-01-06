@@ -10,11 +10,11 @@ function Home() {
       <header className="navbar">
         <h1>SafePass</h1>
         <nav>
-  <Link to="/">Home</Link>
-  <Link to="/register">Register</Link>
-  <Link to="/checks">Check In/Out</Link>
-  <Link to="/logs">Logs</Link>
-</nav>
+          <Link to="/">Home</Link>
+          <Link to="/register">Register</Link>
+          <Link to="/checks">Check In/Out</Link>
+          <Link to="/logs">Logs</Link>
+        </nav>
 
       </header> 
 

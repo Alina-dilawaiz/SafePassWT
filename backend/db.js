@@ -1,4 +1,4 @@
-import mysql from "mysql2";
+const mysql = require("mysql2");
 
 const db = mysql.createConnection({
   host: "localhost",
@@ -8,11 +8,8 @@ const db = mysql.createConnection({
 });
 
 db.connect(err => {
-  if (err) {
-    console.error(" MySQL error:", err);
-  } else {
-    console.log(" MySQL Connected");
-  }
+  if (err) console.error("MySQL error:", err);
+  else console.log("MySQL Connected");
 });
 
-export default db;
+module.exports = db; // This must be module.exports to work with require()
