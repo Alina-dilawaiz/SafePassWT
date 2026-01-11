@@ -43,9 +43,9 @@ This project focuses on the **frontend prototype**, developed using **HTML, CSS,
 ---
 
 ## ⚙️ Tools & Technologies
-- **Frontend Languages:** HTML, CSS, JavaScript  
+- **Frontend Languages:** HTML, CSS, JavaScript, React, mysql
 - **Frameworks/Libraries:** Bootstrap 5  
 - **Version Control:** Git, GitHub  
 - **Responsive Design:** CSS Flexbox & Grid  
-- **Deployment:** GitHub Pages  
+- **Deployment:** GitHub Pages, node
 
