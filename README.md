@@ -1,21 +1,51 @@
-<<<<<<< HEAD
-# SafePassWT
-A web-based visitor management platform that handles visitor registration, QR-based check-in/out, and security monitoring.
-=======
-# React + Vite
+# 🛡️ SafePass – Visitor & Access Control System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Overview
+**SafePass** is a **web-based Visitor and Access Control System** designed to streamline the process of visitor registration, check-in/check-out, and security management for offices or restricted premises.  
+The system generates **QR-based visitor passes**, maintains **digital logs**, and provides an **interactive dashboard** for monitoring and reporting visitor activity.  
+This project focuses on the **frontend prototype**, developed using **HTML, CSS, Bootstrap, and JavaScript**, to create a responsive and interactive interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 👥 Group Members
+- **Aleena Dilawaiz**
+- **Mariha Zia**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧩 Project Modules / Pages
 
-## Expanding the ESLint configuration
+| Module / Page | Purpose / Functionality | Responsible Member |
+|----------------|--------------------------|----------------------|
+| **Home Page** | Acts as a central dashboard for navigation to all modules. Displays a brief overview of the system. | Aleena |
+| **Visitor Registration** | Allows visitors to register by entering personal details and purpose of visit. Includes form validation and dynamic field updates. | Aleena |
+| **QR Pass Generation** | Generates a unique QR code for each visitor after successful registration. | Aleena |
+| **Security Dashboard** | Provides a visual interface for security staff to verify QR passes and track current visitor status. | Mariha |
+| **Check-in / Check-out Logs** | Displays records of visitor entry and exit times, ensuring traceability. | Mariha |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> 1aa47aa (safepass react)
+---
+
+## 🎨 Design & Development Details
+
+### **Design Approach**
+- Built using **HTML5**, **CSS3**, and **Bootstrap 5** for a responsive layout.  
+- Utilizes **Flexbox** and **Grid** for clean alignment and adaptive sections.  
+- Consistent **color scheme** and **typography** for a professional UI.  
+- **Mobile-first design** ensuring accessibility on all devices.
+
+### **JavaScript Interactivity**
+- ✅ Form Validation (Visitor Registration Form)  
+- ✅ Pass Generation  
+- ✅ Interactive Navigation Menu  
+- ✅ Display Visitor Logs  
+- ✅ Dynamic QR Code Display  
+
+---
+
+## ⚙️ Tools & Technologies
+- **Frontend Languages:** HTML, CSS, JavaScript  
+- **Frameworks/Libraries:** Bootstrap 5  
+- **Version Control:** Git, GitHub  
+- **Responsive Design:** CSS Flexbox & Grid  
+- **Deployment:** GitHub Pages  
+
